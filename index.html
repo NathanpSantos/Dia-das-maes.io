@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surpresa para a Mamãe 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inicial">
+    <!-- Tela inicial visível de cara -->
+    <div class="tela-inicial" id="inicio">
+      <h1>Feliz Dia das Mães, Mamãe! 💐</h1>
+      <p>Preparei algo especial pra você...</p>
+      <button onclick="mostrarSurpresa()">Clique para Começar</button>
+    </div>
+
+   <!-- Conteúdo revelado só após o clique -->
+   <div id="conteudo" style="display:none;">
+    <section class="galeria">
+      <h2>🌟 Nossas Memórias</h2>
+      <div class="fotos">
+        <img src="img1.png" alt="Foto 1">
+      <img src="img2.png" alt="Foto 2">
+      <img src="img3.png" alt="Foto 3">
+      <img src="img4.png" alt="Foto 4">
+      <img src="img5.png" alt="Foto 5">
+      <img src="img6.png" alt="Foto 6">
+      <img src="img7.png" alt="Foto 7">
+      <img src="img8.png" alt="Foto 8">
+      <img src="img9.png" alt="Foto 9">
+      <img src="img10.png" alt="Foto 10">
+      <img src="img11.png" alt="Foto 11">
+      <img src="img12.png" alt="Foto 12">
+      <img src="img13.png" alt="Foto 13">
+      <img src="img14.png" alt="Foto 14">
+      <img src="img15.png" alt="Foto 15">
+      <img src="img16.png" alt="Foto 16">
+      <img src="img17.png" alt="Foto 17"> 
+      <img src="img18.png" alt="Foto 18">
+      <img src="img19.png" alt="Foto 19">
+      <img src="img20.png" alt="Foto 20">
+      <img src="img21.png" alt="Foto 21">
+        </div>
+    </section>
+  
+    <section class="video-decorada">
+        <div class="decor-coracao"></div>
+      
+        <div class="conteudo-video">
+          <h2>🎥 Um vídeo só pra você</h2>
+          <video controls>
+            <source src="videop.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+      
+        <div class="decor-coracao"></div>
+      </section>
+      
+  
+      <section class="favoritos">
+        <h2>💖 Coisas que me fazem lembrar de você!!</h2>
+        <div class="favorito-item">🎵 <strong>Música:</strong> 
+          <a href="https://www.youtube.com/watch?v=IWAxEpyM3q4" target="_blank">
+            Para a mãe lembrar de outra mãe especial
+          </a>
+        </div>
+        <div class="favorito-item gif-flor">
+            <img src="gif.gif" alt="GIF engraçado da Rochelle" class="gif-lembranca">
+            <p style="margin-top: 8px;">Porque só de lembrar... já vem até o tapa! 😂</p>
+          </div>
+        <div class="favorito-item">
+          📺 <strong>Dorama:</strong>
+          <div class="dorama">
+            <img src="dorama.png" alt="Cenas de doramas">
+            <p>Apareceu um Dorama em qualquer lugar sei q vc vai assistir kkkk... 💕</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="quiz">
+        <h2>🧠 Quiz da Mamãe!</h2>
+      
+        <div class="pergunta">
+            <p><strong>1. Coisas que aprendi com você?</strong></p>
+            <button onclick="responderQuiz(this, true)">A gostar e amar comer mortadela</button>
+            <button onclick="responderQuiz(this, false)">A ter gosto para estudar</button>
+            <button onclick="responderQuiz(this, false)">A nadar</button>
+        </div>
+      
+        <div class="pergunta">
+          <p><strong>2. Você merece ganhar esse presente?</strong></p>
+          <button onclick="responderQuiz(this, true)">Com certeza!!</button>
+          <button onclick="responderQuiz(this, false)">Não tô affimm</button>
+          <button onclick="responderQuiz(this, false)">Me dá logo!!</button>
+        </div>
+      
+        <div class="pergunta">
+          <p><strong>3. Qual é o seu superpoder?</strong></p>
+          <button onclick="responderQuiz(this, true)">Saber sempre como estou</button>
+          <button onclick="responderQuiz(this, false)">Dar tapas fortes</button>
+          <button onclick="responderQuiz(this, true)">Ser uma super mãe!!</button>
+        </div>
+      </section>
+
+      <section class="final">
+        <h2>💌 Uma última coisa...</h2>
+        <p>Te amo infinitamente, mamãe. Você é minha inspiração todos os dias.</p>
+        <div class="coração" onclick="mostrarMensagem('Te amo demais! ❤️')">❤️</div>
+      </section>
+
+    <script>
+        function mostrarSurpresa() {
+          document.getElementById('inicio').style.display = 'none';
+          document.getElementById('conteudo').style.display = 'block';
+          document.body.classList.remove('inicial');
+          document.body.classList.add('conteudo');
+        }
+      
+        function responderQuiz(botao, certo) {
+          if (certo) {
+            botao.style.backgroundColor = "#4CAF50"; // verde
+            alert("Boa, mamãe! Você acertou!");
+          } else {
+            botao.style.backgroundColor = "#f44336"; // vermelho
+            alert("Hmm... não foi dessa vez 🤭");
+          }
+        }
+      
+        function mostrarMensagem(msg) {
+          alert(msg);
+        }
+      </script>
+    </body>
+    <script>
+        function mostrarSurpresa() {
+          document.getElementById('inicio').style.display = 'none';
+          document.getElementById('conteudo').style.display = 'block';
+          document.body.classList.remove('inicial');
+          document.body.classList.add('conteudo');
+        }
+        </script>
+</html>
