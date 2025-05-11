@@ -230,11 +230,11 @@ body {
   }
 
   .video-decorada {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
   }
   
   .decor-coracao {
